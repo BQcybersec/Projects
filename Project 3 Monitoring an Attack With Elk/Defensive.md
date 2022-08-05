@@ -9,7 +9,7 @@
 
 ### Network Topology
 
-![network](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%203/Images/network.jpg)
+![network](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/network.jpg)
 
 The following machines were identified on the network:
 - Target 1
@@ -50,8 +50,8 @@ Excessive HTTP Errors is implemented as follows:
   - **Vulnerability Mitigated**: An excessive amount of failure codes would indicate that an attack is potentially occuring. 
  
 
-  ![excessive HTTP errors](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%203/Images/blue.01.excessivehttperros.png)
-  ![excessive HTTP erros2](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%203/Images/blue.05.httperrorsintime.png)
+  ![excessive HTTP errors](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/blue.01.excessivehttperros.png)
+  ![excessive HTTP erros2](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/blue.05.httperrorsintime.png)
 
 #### HTTP request size monitor
 HTTP request size monitor is implemented as follows:
@@ -60,7 +60,7 @@ HTTP request size monitor is implemented as follows:
   - **Vulnerability Mitigated**: Unusual HTTP requests from the server
   - **Reliability**: This alert created a lot of false positives due to the size being to small. 
 
-  ![request size monitor](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%203/Images/blue.02.requestsizemonitor.png)
+  ![request size monitor](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/blue.02.requestsizemonitor.png)
 
 #### CPU usage monitor
 CPU usage monitor is implemented as follows:
@@ -69,7 +69,7 @@ CPU usage monitor is implemented as follows:
   - **Vulnerability Mitigated**: This will notify the SOC if suspicious activity is occuring on a server that is utilizing above average resources. 
   - **Reliability**: I thought this was a good indicator of an attack, if the attack was using brute force or had a high demand of the server. It would not catch an attacker if they were being stealthy. 
 
-  ![Cpu Usage](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%203/Images/blue.03.cpuusage.png)
+  ![Cpu Usage](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/blue.03.cpuusage.png)
 
 
 
