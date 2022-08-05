@@ -68,7 +68,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   
 - `flag1.txt` `flag2.txt`
 
-![Flags1 and 2](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.05.nmap.target1.png)
+![Flags1 and 2](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.06.flags1-2.png)
     
     - **Exploit Used**
 
