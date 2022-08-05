@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Elk Stack Diagram](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Network%20Diagrams/RedElkDiagram.jpg)
+![Elk Stack Diagram](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Network%20Diagrams/RedElkDiagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible scripts may be used to install only certain pieces of it, such as Filebeat.
 
-["Ansible Scripts"](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/tree/main/Project%201%20ELK%20Stack/Ansible%20Scripts)
+["Ansible Scripts"](https://github.com/BQcybersec/Projects/tree/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Ansible%20Scripts)
 
 This document contains the following details:
 - Description of the Topology
@@ -88,7 +88,7 @@ The playbook implements the following tasks:
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![docker ps](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/01.sudo_docker_ps_ss.png)
+![docker ps](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/01.sudo_docker_ps_ss.png)
 
 ### Target Machines & Beats
 
@@ -108,13 +108,13 @@ These Beats allow us to collect the following information from each machine:
   Filebeat Collects: Syslog files, Sudo commands, SSH Logins, and New Users and Groups.
     This data can give a very good overview if the system has been compromised, attacked or is operating as intended. When looking at this data I would expect to see data from the Jump-Box provisioning the containers and a handful of operations that were used to test the system. Anything unexplained would show the possibility of being compromised. 
 ### Filebeat syslog overview
-![syslog](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/02.syslog_filebeat.png)
+![syslog](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/02.syslog_filebeat.png)
 ### Filebeat sudo commands data
-![sudo commands](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/02.Sudo_Commands_Filebeat.png)
+![sudo commands](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/02.Sudo_Commands_Filebeat.png)
 ### Filebeat SSH login attempt data
-![SSH](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/02.SSH_Logins_Filebeat.png)
+![SSH](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/02.SSH_Logins_Filebeat.png)
 ### Filebeat New Users and Groups data
-![New Users and Groups](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/02.new_users_groups_filebeat.png)
+![New Users and Groups](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/02.new_users_groups_filebeat.png)
 
   
   
@@ -122,11 +122,11 @@ These Beats allow us to collect the following information from each machine:
   Metricbeat collects: CPU usage, Load, Memory Usage and Network traffic for all three webmachines. When looking at the data I would expect a corelation with traffic to the individual machine. If one machine is performing a task I would expect to see the CPU usage increase. If I connect to the machine via Jump box or the DVWA application I expect to see a bump in network traffic. This is useful data to get a quick system overview without having to log into the machine itself to see how the hardware is behaving.  
 
 ### Metricbeat Overview  
-![metricbeat overview](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/03.Metricbeat_overview.png)
+![metricbeat overview](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/03.Metricbeat_overview.png)
 ### Metricbeat Inventory monitored
-![Inventory Monitored](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/03.Inventory_Monitored_metricbeat.png)
+![Inventory Monitored](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/03.Inventory_Monitored_metricbeat.png)
 ### Metricbeat Individual systems monitored
-![Individual System Overview](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Images/03.Individual_System_Overview_Metricbeat.png)
+![Individual System Overview](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Images/03.Individual_System_Overview_Metricbeat.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -140,7 +140,7 @@ SSH into the control node and follow the steps below:
 
 
 - Which file is the playbook? Where do you copy it?
-  - [install_elk.yml](https://github.com/BQcybersec/-UofM-VIRT-CYBER-12-2021/blob/main/Project%201%20ELK%20Stack/Ansible%20Scripts/install_elk.yml) is the playbook itself and I stored it within the Ansible folder on the Linux machine /etc/ansible
+  - [install_elk.yml](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Ansible%20Scripts/install_elk.yml) is the playbook itself and I stored it within the Ansible folder on the Linux machine /etc/ansible
 
 Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
   - hosts
