@@ -11,4 +11,4 @@ This project contains 3 parts
 
 [Offensive Security Report](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Offensive.md)
 
-[Network Security Report](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Offensive.md)
+[Network Security Report](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Network.md)
