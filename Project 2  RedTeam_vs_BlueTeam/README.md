@@ -26,5 +26,5 @@ meterpreter
 
 Reverse-Shell
 
-[Red Team vs Blue Team](https://github.com/BQcybersec/Projects/tree/main/Project%202%20%20RedTeam_vs_BlueTeam)
+[Red Team vs Blue Team](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/RedTeam_vs_BlueTeam.md)
 
