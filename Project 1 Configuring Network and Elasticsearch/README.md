@@ -4,28 +4,28 @@ In this project I built and configured a network to host a web application and m
 
 [Project 1 Configuring Network and Elasticsearch](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Project1_NetworkConfiguration.md)
 
-Azure,
+Azure
 
-Ubuntu Server,
+Ubuntu Server
 
-Docker,
+Docker
 
-DVWA,
+DVWA
 
-ELK Stack,
+ELK Stack
 
-Filebeat,
+Filebeat
 
-Metricbeat,
+Metricbeat
 
-Ansible,
+Ansible
 
-yaml,
+yaml
 
-Security Rules,
+Security Rules
 
-Load Balancing,
+Load Balancing
 
-Network Monitoring,
+Network Monitoring
 
 
