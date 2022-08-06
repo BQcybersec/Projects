@@ -102,6 +102,7 @@ I Was able to guess a password of one of the users and ssh
 
 `root:R@v3nSecurity`
 `mysql -u root -p`
+
 ![MySQL Login](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Images/red.08.MySQL-Login.png)
        
 `select * from wp_users`
