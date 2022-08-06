@@ -167,7 +167,7 @@ I based the assement off of the [2021 OWASP Top 10 Web Application Security Risk
 			One at approximately 3:05am
 			One at approximately 3:15am
 		
-		`NOT source.port: 80 and NOT source.port:443`
+`NOT source.port: 80 and NOT source.port:443`
 
 ![source port](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/Images/18.SourcePort.png)
 	
@@ -247,16 +247,14 @@ Requesting
 
 `url.path: "/company_folders/secret_folder"`
 
-Top is searching for the requests
-
-Bottom shows how many request returned with an "OK" status
+Top is searching for the requests. Bottom shows how many request returned with an "OK" status.
 
 ![uncoverbrute](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/Images/uncvoerbrute.png)
 
 
 #### Analysis: Finding the WebDAV Connection
 	1.How many requests were made to this directory?
-		- 37 were made to the wWebDAV folder
+		- 37 were made to the WebDAV folder
 	2.Which Files were requested?
 		- the reverse shell "shell.php" was requested 20 times
 	3.Kibana SS's depicting the WebDAV connection
@@ -285,7 +283,7 @@ Bottom shows how many request returned with an "OK" status
 			-Describe the solution.
 				This will stop a potential attacker from mapping out the network and figuring out ways to exploit it. 
 
-	Mitigation:Finding the Request for the Hidden Directory
+	Mitigation: Finding the Request for the Hidden Directory
 		1.Alarm
 			-What kind of alarm can be set to detect future unauthorized access?
 				Authorize select IP Addresses

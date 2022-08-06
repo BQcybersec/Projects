@@ -13,3 +13,40 @@ This project contains 3 parts
 
 [Network Security Report](https://github.com/BQcybersec/Projects/blob/main/Project%203%20Monitoring%20an%20Attack%20With%20Elk/Network.md)
 
+Network Monitoring,
+
+Azure,
+
+Linux,
+
+Elk Stack,
+
+Wordpress,
+
+Kibana,
+
+Wireshark, 
+
+nmap,
+
+network and service scans,
+
+site enumeration, 
+
+John the Ripper,
+
+Hash Cracking,
+
+Capture the Flag,
+
+Packet Analysis, 
+
+Monitoring Web Traffic, 
+
+
+
+
+
+
+
+

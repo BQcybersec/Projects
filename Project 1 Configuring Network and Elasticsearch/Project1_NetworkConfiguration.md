@@ -1,6 +1,6 @@
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below in Microsoft Azure.
 
 ![Elk Stack Diagram](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Network%20Diagrams/RedElkDiagram.jpg)
 
@@ -41,7 +41,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   
   - System Metrics
 
-The configuration details of each machine may be found below.
+#### The configuration details of each machine may be found below.
 
 | Name     | Function        | Private IP | Public IP     | Operating System | Container |
 |----------|-----------------|------------|---------------|------------------|-----------|
@@ -53,19 +53,17 @@ The configuration details of each machine may be found below.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+- The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- Only the Jump-Box machine can accept connections from the Internet.
 
 - My workstations public IP Is the only whitelisted IP with access permission to the Jump-Box. 
 
 - Machines within the network can only be accessed by the Jump-Box.
 
-- Which machine did you allow to access your ELK VM? What was its IP address?
-
 - Access to the ELK virtual machine is done through the Jump box.
 
-A summary of the access policies in place can be found in the table below.
+#### A summary of the access policies in place can be found in the table below.
 
 |     Name        |     Publicly   Accessible    |     Allowed IP   Addresses     |
 |-----------------|------------------------------|--------------------------------|
@@ -77,8 +75,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
- The main advantages of using Ansible to configure a system are it's speed and simplicity. Writing a playbook for Ansible is not too complicated; the language is human readable and powerful. The speed aspect comes once the script is completed because it can be deployed with a single command and you will have a system that is configured to your needs.
+Ansible was used to automate the configuration of the ELK machine. No configuration was performed manually. The main advantages of using Ansible to configure a system are it's speed and simplicity. Writing a playbook for Ansible is not too complicated; the language is human readable and powerful. The speed aspect comes once the script is completed because it can be deployed with a single command and you will have a system that is configured to your needs.
 
 The playbook implements the following tasks:
 
@@ -98,12 +95,12 @@ This ELK server is configured to monitor the following machines:
   - Web-2 10.0.0.6
   - Web-3 10.0.0.7
 
-We have installed the following Beats on these machines:
+I have installed the following Beats on these machines:
 
 - Filebeat
 - Metricbeat
 
-These Beats allow us to collect the following information from each machine:
+These Beats allow me to collect the following information from each machine:
   
   Filebeat Collects: Syslog files, Sudo commands, SSH Logins, and New Users and Groups.
     This data can give a very good overview if the system has been compromised, attacked or is operating as intended. When looking at this data I would expect to see data from the Jump-Box provisioning the containers and a handful of operations that were used to test the system. Anything unexplained would show the possibility of being compromised. 
@@ -142,7 +139,7 @@ SSH into the control node and follow the steps below:
 - Which file is the playbook? Where do you copy it?
   - [install_elk.yml](https://github.com/BQcybersec/Projects/blob/main/Project%201%20Configuring%20Network%20and%20Elasticsearch/Ansible%20Scripts/install_elk.yml) is the playbook itself and I stored it within the Ansible folder on the Linux machine /etc/ansible
 
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
   - hosts
   - You place servers into different categories, the categories are referenced within the playbooks themselves. For this install I used two categories "webservers" and "ELK". In each of the categories I pointed the host file to the desired machines private IP address and had diffenrent playbooks for each type of server. 
 
