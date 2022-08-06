@@ -73,16 +73,20 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
 
    
-      - Nmap Ping Sweep of the entire network
+Nmap Ping Sweep of the entire network
+
 `Nmap -sP 192.168.1.1-255`
 
-      - Nmap Service Scan of Target 1
+Nmap Service Scan of Target 1
+
 `Nmap -sV 192.168.1.110`
 
-      - Wordpress Enumeration with wpscan
+Wordpress Enumeration with wpscan
+
 `wpscan --url http://192.168.1.110/wordpress -eu`
 
-      -I Was able to guess a password of one of the users and ssh
+I Was able to guess a password of one of the users and ssh
+
 `ssh michael@192.168.1.110`
 
 - `flag3.txt`
